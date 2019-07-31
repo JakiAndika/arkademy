@@ -1,0 +1,33 @@
+body{
+    background: aquamarine;
+}
+.kotak{
+    background: red;
+    width: 400px;
+    text-align: center;
+    border: 3px solid gray;
+    border-radius: 5px;
+    padding: 2px;
+    margin: auto;
+}
+
+.kotak1{
+    border: 3px solid whitesmoke;
+    width: 400px;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 12px;    
+    padding: 2px;
+}
+
+.kotak2{
+    background: blue;
+    border: 3px solid gray;
+    width: 400px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px;
+    margin: auto;
+    margin-top: 12px;    
+}
