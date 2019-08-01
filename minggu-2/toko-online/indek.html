@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toko Online Laptop</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h2{
+            color: whitesmoke;
+            text-align: right;
+        }
+        nav{
+            width: 100%;
+            height: 74%;
+            background-color: rgb(31, 24, 24);
+            box-shadow: 0 4px 6px rgba(102, 126, 234, .2)
+        }
+        .nav-wrap{
+            height: 100%;
+            width: 100%;
+            background: rgb(31, 24, 24);
+            margin: auto;
+            max-width: 1152px;
+        }
+       .nav-wrap ul{
+           float: right;
+           top: 20px;
+        }
+       .nav-wrap ul li{
+           float: left;
+           display: block;
+           margin: 0px 15px;
+         }  
+        #item-list{
+            display: flex;
+            flex-wrap: wrap;
+            color: whitesmoke ;
+        }
+        .item:hover{
+            background-color: black;
+            color: blue;
+        }
+        .item{
+            flex: 1;
+            width: 205px;
+            margin: 10px;
+            padding: 10px;
+            background: rgb(31, 24, 24);
+            border: 2px solid rgb(31, 24, 24);
+            border-radius: 10px;
+        }
+        .item .gambar{
+            width: 100%;
+            text-align: center;
+        }
+        .item .gambar img{
+            height: 200px;
+            width: 200px;
+            margin: 1px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .item .nama{
+            background: orange;
+            color : black;
+            text-align: center;
+        }
+        .pemisah{
+            flex: 0px;
+        }
+
+        #item-list div .ram::before{
+            color: orange;
+            content: "RAM : "
+        }
+        #item-list div .warna::before{
+            color: orange;
+            content: "WARNA :"
+        }
+        #item-list div .harga::before{
+            color: orange;    
+            content: "HARGA : "
+        }
+    </style>
+</head>
+<body>
+      <nav>
+         <div class="nav-wrap">
+            <ul>
+               <li><a href="#">Produk</a></li>
+               <li><a href="#">Fitur Kami</a></li>
+               <li><a href="#">Kerjasama</a></li>
+               <li><a href="#">Service</a></li>
+               <li><a href="#">Jaki Andika</a></li>
+            </ul>
+         </div>
+      </nav></br>
+    <h2>Jual Laptop Terbaik</h2>
+    <div id="item-list"></div>
+    <script>
+        let item = [
+  {
+     "nama":"Asus S14",
+     "gambar":"assest/img/1.jpg",
+     "ram":"8GB",
+     "warna":"aquamarine",
+     "harga":"RP.10.000.000"
+  },
+  
+  {
+     "nama":"Asus ROG XO139D",
+     "gambar":"assest/img/2.jpg",
+     "ram":"4GB",
+     "warna":"black",
+     "harga":"RP.11.799.000"
+  },
+  
+  {
+     "nama":"ASUS ROG DM356D",
+     "gambar":"assest/img/3.jpg",
+     "ram":"4GB",
+     "warna":"black",
+     "harga":"RP.12.499.000"
+  },
+  
+  {
+     "nama":"ASUS ROG DM018D ",
+     "gambar":"assest/img/4.jpg",
+     "ram":"4GB",
+     "warna":"black",
+     "harga":"RP.12.999.000"
+  },
+  {
+     "nama":"ASUS ROG CN461D",
+     "gambar":"assest/img/5.jpg",
+     "ram":"8GB",
+     "warna":"black",
+     "harga":"RP.14.499.000"
+  },
+  {
+     "nama":"ASUS ROG CN085H",
+     "gambar":"assest/img/6.jpg",
+     "ram":"8GB",
+     "warna":"black",
+     "harga":"RP.15.499.000"
+  },
+  {
+     "nama":"ASUS ROG FI157T",
+     "gambar":"assest/img/7.jpg",
+     "ram":"8GB",
+     "warna":"black",
+     "harga":"RP.16.999.000"
+  },
+  {
+     "nama":"ASUS ROG T4211T",
+     "gambar":"assest/img/8.jpg",
+     "ram":"8GB",
+     "warna":"black",
+     "harga":"RP.17.499.000"
+  },
+  {
+     "nama":"ASUS ROG CN446T",
+     "gambar":"assest/img/9.jpg",
+     "ram":"8GB",
+     "warna":"black",
+     "harga":"RP.18.499.000"
+  },
+  {
+     "nama":"ASUS ROG FY173T",
+     "gambar":"assest/img/10.jpg",
+     "ram":"8GB",
+     "warna":"black",
+     "harga":"RP.18.999.000"
+  },
+  {
+     "nama":"ASUS ROG FI260H",
+     "gambar":"assest/img/11.jpg",
+     "ram":"16GB",
+     "warna":"black and green",
+     "harga":"RP.19.999.000"
+  },
+  {
+     "nama":"ASUS ROG FI174T",
+     "gambar":"assest/img/12.jpg",
+     "ram":"16GB",
+     "warna":"black",
+     "harga":"RP.23.499.000"
+  },
+  {
+     "nama":"ASUS ROG GC344T",
+     "gambar":"assest/img/13.jpg",
+     "ram":"8GB",
+     "warna":"grey",
+     "harga":"RP.29.999.000"
+  },
+  {
+     "nama":"ASUS ROG GC346T",
+     "gambar":"assest/img/14.jpg",
+     "ram":"32GB",
+     "warna":"grey",
+     "harga":"RP.37.999.000"
+  },
+  {
+     "nama":"ASUS ROG GC011T",
+     "gambar":"assest/img/15.jpg",
+     "ram":"64GB",
+     "warna":"grey",
+     "harga":"RP.79.999.000"
+  },
+  {
+     "nama":"ASUS ROG GY005T",
+     "gambar":"assest/img/16.jpg",
+     "ram":"64GB",
+     "warna":"grey",
+     "harga":"RP.95.295.000"
+  },
+  {
+     "nama":"MSI GT83VR 6RF TITAN SLI",
+     "gambar":"assest/img/17.png",
+     "ram":"64GB",
+     "warna":"black",
+     "harga":"RP.75.000.000"
+  },
+  {
+     "nama":"Asus ROG Mothership",
+     "gambar":"assest/img/18.jpg",
+     "ram":"64GB",
+     "warna":"black",
+     "harga":"RP.130.999.000"
+  },
+  {
+     "nama":"ASUS ROGStrix SCAR III",
+     "gambar":"assest/img/19.jpg",
+     "ram":"32GB",
+     "warna":"black",
+     "harga":"RP.30.999.000"
+  },
+  {
+     "nama":"ASUS ROG Strix Hero III",
+     "gambar":"assest/img/20.jpg",
+     "ram":"32GB",
+     "warna":"black",
+     "harga":"RP.25.999.000"
+  },    
+];
+for(x in item){
+    let namaItem = item[x].nama;
+    let gambarItem = item[x].gambar;
+    let ramItem = item[x].ram;
+    let warnaItem = item[x].warna;
+    let hargaItem = item[x].harga;
+    document.getElementById('item-list').innerHTML+="\
+    <div class='item'>\
+      <div class='gambar'><img src ='"+gambarItem+"' alt=''/></div>\
+      <div class='nama'>"+namaItem+"</div>\
+      <div class='ram'>"+ramItem+"</div>\
+      <div class='warna'>"+warnaItem+"</div>\
+      <div class='harga'>"+hargaItem+"</div>\
+    </div>\
+    ";
+    if(((x+1)/5)===0) {
+      document.getElementById('item-list').innerHTML+="\
+      <div class='pemisah'></div>\
+      ";
+    }
+}
+    </script>
+</body>
+</html>
