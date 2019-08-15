@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="nav12">
+      <div class="em1">
+        <label>Password :</label>
+        <input type="password" name="password" placeholder="Password">
+        <button onclick="masuk()">Kirim</button>
+      </div>
+
+      <div class="pw1">        
+        <label>Email :</label>
+        <input type="text" name="email" placeholder="Email">
+      </div>
+    </div>
+  <div class="kotak">
+    <div class="judul">
+      <h2>Daftar</h2>
+      <h3>Gratis, sampai kapan pun.</h3>
+    </div>
+    <div id="nama">
+      <input type="text" name="nama" id="nama1" placeholder="Nama Depan"> <input type="text" name="Nama" id="nama2" placeholder="nama Belakang">
+    </div>
+    <div id="email">
+      <input type="email" name="email" id="email1" placeholder="Email">
+    </div>
+    <div id="password">
+      <input type="password" name="password" id="password1" placeholder="Password">
+    </div>
+    <div class="tanggal-lahir">
+      <div class="lahir">
+        Tanggal Lahir :<br>
+      </div>
+      <input type="date" name="Tanggal" id="tgl_lahir" required><br>
+    </div>
+    <div class="jenis-kelamin">
+        <p>Jenis Kelamin  :</p>
+        <input type="radio" name="jenis_kelamin" value="laki-laki" /> 
+        Laki - Laki
+        <input type="radio" name="jenis_kelamin" value="perempuan" /> 
+        Perempuan
+       <br />
+    </div>
+    <div id="login">
+      <button onclick="klik()" class="tombol_login">Buat Akun</button>
+    </div>
+  </div>
+</body>
+</html>

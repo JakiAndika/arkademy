@@ -11,30 +11,8 @@
         }
         h2{
             color: whitesmoke;
-            text-align: right;
-        }
-        nav{
-            width: 100%;
-            height: 74%;
-            background-color: rgb(31, 24, 24);
-            box-shadow: 0 4px 6px rgba(102, 126, 234, .2)
-        }
-        .nav-wrap{
-            height: 100%;
-            width: 100%;
-            background: rgb(31, 24, 24);
-            margin: auto;
-            max-width: 1152px;
-        }
-       .nav-wrap ul{
-           float: right;
-           top: 20px;
-        }
-       .nav-wrap ul li{
-           float: left;
-           display: block;
-           margin: 0px 15px;
-         }  
+            text-align: center;
+        }  
         #item-list{
             display: flex;
             flex-wrap: wrap;
@@ -65,8 +43,10 @@
             border-radius: 10px;
         }
         .item .nama{
+           font-family: Arial, Helvetica, sans-serif;
             background: orange;
             color : black;
+            border-radius: 5px;
             text-align: center;
         }
         .pemisah{
@@ -74,31 +54,23 @@
         }
 
         #item-list div .ram::before{
+           font-family: Arial, Helvetica, sans-serif;
             color: orange;
             content: "RAM : "
         }
         #item-list div .warna::before{
+           font-family: Arial, Helvetica, sans-serif;
             color: orange;
             content: "WARNA :"
         }
         #item-list div .harga::before{
+           font-family: Arial, Helvetica, sans-serif;
             color: orange;    
             content: "HARGA : "
         }
     </style>
 </head>
 <body>
-      <nav>
-         <div class="nav-wrap">
-            <ul>
-               <li><a href="#">Produk</a></li>
-               <li><a href="#">Fitur Kami</a></li>
-               <li><a href="#">Kerjasama</a></li>
-               <li><a href="#">Service</a></li>
-               <li><a href="#">Jaki Andika</a></li>
-            </ul>
-         </div>
-      </nav></br>
     <h2>Jual Laptop Terbaik</h2>
     <div id="item-list"></div>
     <script>
