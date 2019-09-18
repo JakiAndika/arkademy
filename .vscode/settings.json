@@ -1,0 +1,10 @@
+{
+    "editor.fontFamily": "SF Mono",
+    "editor.fontSize": 24,
+    "editor.fontWeight": 600,
+    "editor.formatOnSave": false,
+    "workbench.colorTheme": "Default Light+",
+    "terminal.integrated.fontFamily": "SF Mono",
+    "terminal.integrated.fontWeight": 800,
+    "terminal.integrated.fontSize": 28
+}
