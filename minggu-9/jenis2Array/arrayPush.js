@@ -8,4 +8,4 @@ arrayPushHewan();
 /*NOTE :
 Arrah map adalah fungsi perulangan array seperti for in dan 
 foreach
-*/
+*/  
