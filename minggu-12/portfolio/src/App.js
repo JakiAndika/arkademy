@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div class="wrapper with-image">
+        <div class="flex-wrapper">
+          Save your Earth
+        <div class="description">Menanam satu pohon, menghasilkan sejuta manfaat.</div>
+        </div>
+        <div class="line">
+          <div class="text">
+          <i class="fa fa-react"></i> Donasi Pohon
+          </div>
+        </div>
+        <div class="line1">
+          <div class="text1">
+          <i class="fas fa-phone-alt"></i> Hubungi Kami
+            </div>
+        </div>
+      </div>
+    )
+  }
 }
+// function App() {
+// return (
+
+// );
+//}
 
 export default App;

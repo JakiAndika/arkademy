@@ -1,22 +1,84 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Pangolin&display=swap");
+.wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.with-image {
+    background-image: url("./bggrey1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.flex-wrapper {
+    font-family: 'Pangolin', cursive;
+    margin: 200px;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
 }
 
-.App-link {
-  color: #09d3ac;
+.description {
+    font-family: 'Pangolin', cursive;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    position: absolute;
+    margin: 120px;
+    left: 80px;
+    right: 778px;
+    top: 220px;
+    bottom: 100px;
+    border-radius: 6px;
+    background: #00B894;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    position: absolute;
+    left: 55px;
+    right: 20px;
+    top: 13px;
+    bottom: 20px;
+    font-family: 'Pangolin', cursive;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+}
+
+.line1 {
+    position: absolute;
+    left: 31%;
+    right: 56%;
+    top: 56%;
+    bottom: 36%;
+    background: rgba(0, 184, 148, 0.1);
+    border: 2px solid #00B894;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text1 {
+    position: absolute;
+    left: 30%;
+    right: 5%;
+    top: 28%;
+    bottom: 28%;
+    font-family: 'Pangolin', cursive;
+    font-size: 18px;
+    color: #00B894;
+    justify-content: center;
+    align-items: center;
 }
